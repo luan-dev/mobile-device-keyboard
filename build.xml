@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project mobile-device-keyboard with Jar-in-Jar Loader">
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/Luan/eclipse-workspace"/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/Mobile-Device-Keyboard.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="AutocompleteProvider"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ org.junit_4.13.0.v20200204-1500.jar org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.jarfile}/bin"/>
+            <zipfileset dir="C:/Users/Luan/.p2/pool/plugins" includes="org.junit_4.13.0.v20200204-1500.jar"/>
+            <zipfileset dir="C:/Users/Luan/.p2/pool/plugins" includes="org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+        </jar>
+    </target>
+</project>
