@@ -12,6 +12,9 @@ Make sure you also have a file called `test.txt` and any other training passages
 
 To make this easy to test, I have zipped up the required files into a `Program.zip` file. You just need to unzip the file and run `java AutocompleteProvider` to run the program.  Testing can be done manually or by loading in `.txt` files. These files must be in the same directory as the `.class` files.
 
+## Building
+If you want to rebuild the files, I have added a `Source.zip` file that contains all the `.java` code. You can modify the code and run `javac AutocompleteProvider.java` to create another program and then run `java AutocompleteProvider` to test it again.
+
 ## Usage
 Run `java AutoCompleteProvider` to start the command line
 You will be prompted with a command line interface. Here are the following commands:
@@ -26,16 +29,16 @@ You will be prompted with a command line interface. Here are the following comma
 You can access these commands if you type `help` at the main menu.
 
 ### Training
-`train` will let you type in a string and it will build up the dictionary. I added 
+`train` will let you type in a string and it will build up the dictionary. I added a filter so that it doesn't show a bunch of clutter. You can change the filter by changing the `THRESHOLD` value in the `Node.java` file. By default the value is 3 since most phones only show three suggestions. You can quit anytime by entering an empty string.
 
 ### Guessing
-`guess` will return the list of strings that thinks is best for you
+`guess` will return the list of strings that thinks is best for you. You can quit this by entering an empty string.
 
 ### Loading
-'load' will display all the files you can load. Put these in the same directory as the AutocompleteProvider.class file
+'load' will display all the files you can load. Put these in the same directory as the AutocompleteProvider.class file.
 
 ### Testing
-'test' will load a file named test.txt. This has been provided, but it needs to be in the same directory as the AutocompleteProvider.class file
+'test' will load a file named test.txt. This has been provided, but it needs to be in the same directory as the AutocompleteProvider.class file.
 
 ### Quitting
 `quit` will quit the program
