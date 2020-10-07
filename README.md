@@ -13,7 +13,7 @@ Make sure you also have a file called `test.txt` and any other training passages
 To make this easy to test, I have zipped up the required files into a `Program.zip` file. You just need to unzip the file and run `java AutocompleteProvider` to run the program.  Testing can be done manually or by loading in `.txt` files. These files must be in the same directory as the `.class` files.
 
 ## Building
-If you want to rebuild the files, I have added a `Source.zip` file that contains all the `.java` code. You can modify the code and run `javac AutocompleteProvider.java` to create another program and then run `java AutocompleteProvider` to test it again.
+If you want to rebuild the files, I have added a `src.zip` file that contains all the `.java` code. You can modify the code and run `javac AutocompleteProvider.java` to create another program and then run `java AutocompleteProvider` to test it again.
 
 ## Usage
 Run `java AutoCompleteProvider` to start the command line
