@@ -39,3 +39,6 @@ You can access these commands if you type `help` at the main menu.
 
 ### Quitting
 `quit` will quit the program
+
+## Testing
+I have included the entire Great Gatsby text in the submission for you to easily test. You can load this by running `load` and then `gatsby.txt`. You can check the word count of the words to confirm that it is correct by using this site: https://www.verbalworkout.com/t/t1012a.htm.
