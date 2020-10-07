@@ -10,10 +10,10 @@ You will need to have Java 8 installed to run this app.
 
 Make sure you also have a file called `test.txt` and any other training passages in the same directory as the class files. This is an easy way to train the code. You can input whatever you want in it. I preloaded the sample test case that was provided.
 
-To make this easy to test, I have zipped up the required files into a `Program.zip` file. You just need to unzip the file and run `java AutocompleteProvider` to run the program.  Testing can be done manually or by loading in `.txt` files. These files must be in the same directory as the `.class` files.
+To make this easy to test, I have zipped up the required files into a `program.zip` file. You just need to unzip the folder and run `java AutocompleteProvider` (do not include the `.class`) to run the program. Testing can be done manually or by loading in `.txt` files. These files must be in the same directory as the `.class` files.
 
 ## Building
-If you want to rebuild the files, I have added a `Source.zip` file that contains all the `.java` code. You can modify the code and run `javac AutocompleteProvider.java` to create another program and then run `java AutocompleteProvider` to test it again.
+If you want to rebuild the files, I have added a `src.zip` file that contains all the `.java` code. You can modify the code and run `javac AutocompleteProvider.java` to create another program and then run `java AutocompleteProvider` to test it again.
 
 ## Usage
 Run `java AutoCompleteProvider` to start the command line
@@ -29,16 +29,16 @@ You will be prompted with a command line interface. Here are the following comma
 You can access these commands if you type `help` at the main menu.
 
 ### Training
-`train` will let you type in a string and it will build up the dictionary. I added a filter so that it doesn't show a bunch of clutter. You can change the filter by changing the `THRESHOLD` value in the `Node.java` file. By default the value is 3 since most phones only show three suggestions. You can quit anytime by entering an empty string.
+`train` will let you type in a string and it will build up the dictionary.
 
 ### Guessing
-`guess` will return the list of strings that thinks is best for you. You can quit this by entering an empty string.
+`guess` will return the list of strings that thinks is best for you. You can quit this by entering an empty string. I added a filter so that it doesn't show a bunch of clutter.  By default the value is 3 since most phones only show three suggestions. You can change the filter by changing the `THRESHOLD` value in the `Node.java` file.
 
 ### Loading
 'load' will display all the files you can load. Put these in the same directory as the AutocompleteProvider.class file.
 
 ### Testing
-'test' will load a file named test.txt. This has been provided, but it needs to be in the same directory as the AutocompleteProvider.class file.
+'test' will load a file named test.txt. This has been provided, but it needs to be in the same directory as the other files.
 
 ### Quitting
 `quit` will quit the program
