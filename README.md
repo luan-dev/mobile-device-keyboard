@@ -35,10 +35,10 @@ You can access these commands if you type `help` at the main menu.
 `guess` will return the list of strings that thinks is best for you. You can quit this by entering an empty string. I added a filter so that it doesn't show a bunch of clutter.  By default the value is 3 since most phones only show three suggestions. You can change the filter by changing the `THRESHOLD` value in the `Node.java` file.
 
 ### Loading
-'load' will display all the files you can load. Put these in the same directory as the AutocompleteProvider.class file.
+`load` will display all the files you can load. Put these in the same directory as the AutocompleteProvider.class file.
 
 ### Testing
-'test' will load a file named test.txt. This has been provided, but it needs to be in the same directory as the other files.
+`test` will load a file named test.txt. This has been provided, but it needs to be in the same directory as the other files.
 
 ### Quitting
 `quit` will quit the program
