@@ -40,6 +40,8 @@ public class AutocompleteProvider {
 					break;
 				case "test":
 					load("test.txt");
+					System.out.println("");
+					break;
 				case "quit":
 					System.out.println("Quitting...");
 					System.exit(0);
